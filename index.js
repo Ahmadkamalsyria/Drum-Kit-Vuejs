@@ -81,12 +81,14 @@ var tom3 = new Vue({
 var tom4 = new Vue({
     el: "#app7",
     data: {
-        name: "tom-4"
+        name: "tom-4",
+        cilcked: false
     },
     methods: {
         playTom4() {
             console.log('clicked');
             tom4Track.play();
+            this.cilcked = true
         }
     }
 })
